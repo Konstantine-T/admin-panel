@@ -7,11 +7,16 @@
     "dev": "vite",
     "build": "tsc -b && vite build",
     "lint": "eslint .",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "supabase-ts": "npx supabase gen types --lang=typescript --project-id qkjioqscznxzbfrfdjoh --schema public > src/supabase/database.types.ts"
   },
   "dependencies": {
+    "@supabase/supabase-js": "^2.47.10",
+    "antd": "^5.22.5",
     "react": "^18.3.1",
-    "react-dom": "^18.3.1"
+    "react-dom": "^18.3.1",
+    "react-router-dom": "^7.0.2",
+    "supabase": "^2.1.1"
   },
   "devDependencies": {
     "@eslint/js": "^9.17.0",
